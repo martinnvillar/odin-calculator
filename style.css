@@ -69,6 +69,24 @@ body {
     border-radius: 5px;
     box-shadow: 1px 1px 2px rgb(150, 153, 156);
     background-color: aliceblue;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 25px;
+}
+
+footer {
+    color: #fff;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    /* text-shadow: 1px 1px 2px black; */
+    margin-bottom: -100px;
+}
+
+.footLink {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footLink:hover {
+    color: #fff;
+    text-decoration:underline;
 }
