@@ -4,34 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
     <title>Calculator</title>
 </head>
 <body>
     <div class="container">
         <div class="display">
-            813298309
+            <div class="currentOp">0</div>
+            <div class="result">0</div>
         </div>
         <div class="removeBtns">
             <button class="rmvBtn" id="clearBtn">CLEAR</button>
             <button class="rmvBtn" id="deleteBtn">DELETE</button>
         </div>
         <div class="opContainer">
-            <button class="opBtns">7</button>
-            <button class="opBtns">8</button>
-            <button class="opBtns">9</button>
+            <button class="opBtns" id="sevenBtn" value="7">7</button>
+            <button class="opBtns" id="eightBtn" value="8">8</button>
+            <button class="opBtns" id="nineBtn" value="9">9</button>
             <button class="opBtns">/</button>
-            <button class="opBtns">4</button>
-            <button class="opBtns">5</button>
-            <button class="opBtns">6</button>
+            <button class="opBtns" id="fourBtn" value="4">4</button>
+            <button class="opBtns" id="fiveBtn" value="5">5</button>
+            <button class="opBtns" id="sixBtn" value="6">6</button>
             <button class="opBtns">x</button>
-            <button class="opBtns">1</button>
-            <button class="opBtns">2</button>
-            <button class="opBtns">3</button>
+            <button class="opBtns" id="oneBtn">1</button>
+            <button class="opBtns" id="twoBtn" value="2">2</button>
+            <button class="opBtns" id="threeBtn" value="3">3</button>
             <button class="opBtns">-</button>
             <button class="opBtns">.</button>
-            <button class="opBtns">0</button>
+            <button class="opBtns" id="zeroBtn" value="0">0</button>
             <button class="opBtns">=</button>
             <button class="opBtns">+</button>
         </div>
