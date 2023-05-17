@@ -74,7 +74,8 @@ body {
     margin-top: 5px;
 }
 
-.rmvBtn {
+.clearBtn,
+.deleteBtn {
     font-family: "MyFont";
     font-size: 22px;
     font-weight: bold;
@@ -88,7 +89,8 @@ body {
 }
 
 .numBtns:hover,
-.rmvBtn:hover, 
+.clearBtn:hover,
+.deleteBtn:hover, 
 .opBtns:hover, 
 .equal:hover {
     cursor: pointer;
