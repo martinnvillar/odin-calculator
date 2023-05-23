@@ -17,6 +17,8 @@ const equal = document.querySelector('.equal');
 equal.addEventListener('click', evaluate);
 const numBtns = document.querySelectorAll('.numBtns');
 const opBtns = document.querySelectorAll('.opBtns');
+const dotBtn = document.querySelector('.dotBtn');
+dotBtn.addEventListener('click', dot);
 
 // math functions
 
@@ -59,7 +61,16 @@ function displayOperator (op) {
     operator = op;
     currentOpScreen.textContent = `${firstNumber} ${operator}`;
     resetScreen = true;
-}
+};
+
+function dot() {
+    if (resetScreen) screenReset();
+    if (previousOpScreen.textContent === '') {
+        previousOpScreen.textContent = '0';
+    }
+    if (previousOpScreen.textContent.includes('.')) return;
+    previousOpScreen.textContent += '.';
+};
 
 function evaluate() {
     if(operator === null || resetScreen) return;
@@ -105,6 +116,7 @@ function clearScreen () {
 // delete each number
 
 function deleteNumber () {
+    if(previousOpScreen.textContent === '0') return;
     previousOpScreen.textContent = previousOpScreen.textContent
     .toString()
     .slice(0, -1);
@@ -133,6 +145,3 @@ function operate(op, a, b) {
             return null;       
     };
 };
-
-
-

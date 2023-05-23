@@ -92,7 +92,8 @@ body {
 .clearBtn:hover,
 .deleteBtn:hover, 
 .opBtns:hover, 
-.equal:hover {
+.equal:hover,
+.dotBtn:hover {
     cursor: pointer;
     background-color: rgb(194, 196, 198, 0.588);
 }
@@ -103,7 +104,10 @@ body {
     grid-gap: 10px;
 }
 
-.numBtns, .opBtns, .equal {
+.numBtns,
+.opBtns,
+.equal,
+.dotBtn {
     font-family: "MyFont";
     font-weight: bold;
     width: 70px;
